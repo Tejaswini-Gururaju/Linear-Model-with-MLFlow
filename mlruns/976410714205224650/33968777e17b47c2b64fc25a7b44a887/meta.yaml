@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Linear-Model-with-MLFlow/mlruns/976410714205224650/33968777e17b47c2b64fc25a7b44a887/artifacts
+end_time: 1713432080481
+entry_point_name: ''
+experiment_id: '976410714205224650'
+lifecycle_stage: active
+run_id: 33968777e17b47c2b64fc25a7b44a887
+run_name: abrasive-moose-964
+run_uuid: 33968777e17b47c2b64fc25a7b44a887
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1713432065132
+status: 3
+tags: []
+user_id: admin
