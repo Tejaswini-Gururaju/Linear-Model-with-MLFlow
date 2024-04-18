@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Linear-Model-with-MLFlow/mlruns/976410714205224650/d7c47b8c81644d2e914c1dc497517634/artifacts
+end_time: 1713431578976
+entry_point_name: ''
+experiment_id: '976410714205224650'
+lifecycle_stage: active
+run_id: d7c47b8c81644d2e914c1dc497517634
+run_name: unruly-roo-0
+run_uuid: d7c47b8c81644d2e914c1dc497517634
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1713431510035
+status: 3
+tags: []
+user_id: admin
