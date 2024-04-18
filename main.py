@@ -54,9 +54,23 @@ x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.2,random_state=
 
 alpha = args.alpha
 l1_ratio = args.l1_ratio
-exp = mlflow.set_experiment(experiment_name="exp_1")
 
-with mlflow.start_run(experiment_id=exp.experiment_id):
+mlflow.set_tracking_uri(uri="")
+
+# exp = mlflow.set_experiment(experiment_name="exp_for_uri")
+exp_id = mlflow.create_experiment(name="experiment_new_3",tags={"version":"v1","priority":"p1"})
+get_exp = mlflow.get_experiment(exp_id)
+
+print(f"Name: {get_exp.name}")
+print(f"Experiment_ID: {get_exp.experiment_id}")
+print(f"Artifact_location: {get_exp.artifact_location}")
+print(f"Tags: {get_exp.tags}")
+print(f"Life cycle stage: {get_exp.lifecycle_stage}")
+print(f"creation_timestamp: {get_exp.creation_time}")
+
+# with mlflow.start_run(experiment_id=exp.experiment_id):
+with mlflow.start_run(experiment_id=exp_id):
+    print(f"the set tracking uri is: {mlflow.get_artifact_uri()}")
     print("Model training started")
     reg=ElasticNet(alpha=alpha,l1_ratio=l1_ratio,random_state=42)
     reg.fit(x_train,y_train)
@@ -72,13 +86,25 @@ with mlflow.start_run(experiment_id=exp.experiment_id):
     print(f"MAE: {mae}")
     print(f"R2_SCORE: {r2}")
 
-    mlflow.log_param("alpha",alpha)
-    mlflow.log_param("l1_ratio",l1_ratio)
+    # mlflow.log_param("alpha",alpha)
+    # mlflow.log_param("l1_ratio",l1_ratio)
+    params = {
+        'alpha' : alpha,
+        'l1_ratio' : l1_ratio
+    }
+    mlflow.log_params(params=params)
 
     mlflow.log_metric("RMSE",rmse)
     mlflow.log_metric("MAE",mae)
     mlflow.log_metric("R2_SCORE",r2)
 
+    ''' Active run functions should be place b/w start tun and end run and last_active_run after the end_run() block'''
+    # run=mlflow.active_run()
+    # print(f"Run ID: {run.info.run_id}")
+    # print(f"Run Name: {run.info.run_name}")
+
+ 
     mlflow.sklearn.log_model(reg,"mymodel")
+# mlflow.end_run()
 
 

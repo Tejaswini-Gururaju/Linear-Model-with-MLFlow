@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Linear-Model-with-MLFlow/mlruns/0/01e5539f172845c1ae6c5c02de724138/artifacts
+end_time: 1713434779969
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 01e5539f172845c1ae6c5c02de724138
+run_name: sneaky-crow-328
+run_uuid: 01e5539f172845c1ae6c5c02de724138
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1713434779729
+status: 3
+tags: []
+user_id: admin

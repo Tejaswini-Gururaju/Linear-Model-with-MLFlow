@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Linear-Model-with-MLFlow/mlruns/891562388949413473/e738681d02194d1cabd1d374606eb643/artifacts
+end_time: 1713435995176
+entry_point_name: ''
+experiment_id: '891562388949413473'
+lifecycle_stage: active
+run_id: e738681d02194d1cabd1d374606eb643
+run_name: valuable-hen-774
+run_uuid: e738681d02194d1cabd1d374606eb643
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1713435987305
+status: 3
+tags: []
+user_id: admin

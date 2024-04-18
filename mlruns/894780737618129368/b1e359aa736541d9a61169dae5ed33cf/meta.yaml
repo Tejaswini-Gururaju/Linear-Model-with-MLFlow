@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Linear-Model-with-MLFlow/mlruns/894780737618129368/b1e359aa736541d9a61169dae5ed33cf/artifacts
+end_time: 1713435255863
+entry_point_name: ''
+experiment_id: '894780737618129368'
+lifecycle_stage: active
+run_id: b1e359aa736541d9a61169dae5ed33cf
+run_name: sneaky-bug-284
+run_uuid: b1e359aa736541d9a61169dae5ed33cf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1713435235043
+status: 3
+tags: []
+user_id: admin
